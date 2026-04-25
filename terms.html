@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Terms of Service — webp.convert</title>
+<meta name="description" content="Terms of Service for webp.convert. Free browser-based WebP image converter." />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#f5f6f8;--surface:#fff;--border:#e3e6eb;--border2:#cdd1d8;
+  --text:#1a1d23;--sub:#5a6270;--hint:#9ba3af;
+  --accent:#2563eb;--accent-h:#1d4ed8;
+  --accent-s:rgba(37,99,235,.08);--accent-b:rgba(37,99,235,.18);
+  --green:#16a34a;--green-s:rgba(22,163,74,.09);
+  --sh:0 1px 3px rgba(0,0,0,.07),0 1px 2px rgba(0,0,0,.04);
+  --r:10px;--rsm:6px;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Lato',sans-serif;font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased;min-height:100vh}
+.page{max-width:720px;margin:0 auto;padding:0 20px 80px}
+
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid var(--border);margin-bottom:48px}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo{width:34px;height:34px;background:var(--accent);border-radius:8px;display:grid;place-items:center}
+.nav-logo svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.nav-name{font-size:17px;font-weight:900;color:var(--text);letter-spacing:-.3px}
+.nav-name span{color:var(--accent)}
+.nav-back{font-size:13px;font-weight:700;color:var(--sub);text-decoration:none;display:flex;align-items:center;gap:6px;transition:color .14s}
+.nav-back:hover{color:var(--accent)}
+.nav-back svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.policy-hero{margin-bottom:36px}
+.policy-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);background:var(--accent-s);border:1px solid var(--accent-b);padding:4px 12px;border-radius:20px;margin-bottom:16px}
+.policy-hero h1{font-size:clamp(24px,4vw,32px);font-weight:900;letter-spacing:-.4px;margin-bottom:10px}
+.policy-meta{font-size:13px;color:var(--hint)}
+
+.policy-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--sh);padding:32px;margin-bottom:16px}
+
+.toc{background:var(--bg);border:1px solid var(--border);border-radius:var(--rsm);padding:20px 24px;margin-bottom:32px}
+.toc-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--hint);margin-bottom:12px}
+.toc ol{padding-left:18px}
+.toc li{margin-bottom:4px}
+.toc a{font-size:14px;color:var(--accent);text-decoration:none;font-weight:700}
+.toc a:hover{text-decoration:underline}
+
+.policy-section{margin-bottom:36px}
+.policy-section:last-child{margin-bottom:0}
+.section-num{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--hint);margin-bottom:6px}
+.policy-section h2{font-size:18px;font-weight:900;color:var(--text);margin-bottom:14px;padding-top:4px}
+.policy-section p{font-size:15px;color:var(--sub);margin-bottom:12px;font-weight:300}
+.policy-section p:last-child{margin-bottom:0}
+.policy-section ul,.policy-section ol{padding-left:20px;margin-bottom:12px}
+.policy-section li{font-size:15px;color:var(--sub);margin-bottom:6px;font-weight:300}
+.policy-section strong{color:var(--text);font-weight:700}
+
+.highlight-box{background:var(--accent-s);border:1px solid var(--accent-b);border-radius:var(--rsm);padding:16px 20px;margin-bottom:20px}
+.highlight-box p{color:var(--text);font-size:14px;font-weight:400;margin:0}
+.highlight-box strong{color:var(--accent)}
+
+.info-box{background:var(--green-s);border:1px solid rgba(22,163,74,.2);border-radius:var(--rsm);padding:16px 20px;margin-bottom:20px}
+.info-box p{color:#14532d;font-size:14px;font-weight:400;margin:0}
+
+.divider{border:none;border-top:1px solid var(--border);margin:32px 0}
+
+.contact-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--rsm);padding:20px 24px;margin-top:20px}
+.contact-card h3{font-size:15px;font-weight:700;margin-bottom:8px}
+.contact-card p{font-size:14px;color:var(--sub);font-weight:300;margin-bottom:4px}
+.contact-card a{color:var(--accent);font-weight:700;text-decoration:none}
+.contact-card a:hover{text-decoration:underline}
+
+footer{border-top:1px solid var(--border);padding-top:24px;margin-top:48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-brand{font-size:14px;font-weight:700;color:var(--text)}
+.footer-brand span{color:var(--accent)}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a{font-size:13px;color:var(--hint);text-decoration:none}
+.footer-links a:hover{color:var(--accent)}
+
+@media(max-width:600px){
+  .policy-card{padding:20px}
+  .toc{padding:16px}
+  footer{justify-content:center;text-align:center}
+  .footer-links{justify-content:center}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<nav>
+  <a class="nav-brand" href="index.html">
+    <div class="nav-logo">
+      <svg viewBox="0 0 24 24"><path d="M4 16l4-4 4 4 4-8 4 4"/></svg>
+    </div>
+    <span class="nav-name">webp<span>.</span>convert</span>
+  </a>
+  <a class="nav-back" href="index.html">
+    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    Back to app
+  </a>
+</nav>
+
+<div class="policy-hero">
+  <div class="policy-badge">
+    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+    Terms of Service
+  </div>
+  <h1>Terms of Service</h1>
+  <div class="policy-meta">Last updated: April 26, 2025 &nbsp;&middot;&nbsp; Effective immediately</div>
+</div>
+
+<div class="policy-card">
+
+  <div class="highlight-box">
+    <p><strong>Plain English summary:</strong> Use this tool freely for personal or commercial work. Don't abuse it, don't reverse-engineer it to resell it, and don't do anything illegal with it. We provide it as-is with no guarantees.</p>
+  </div>
+
+  <div class="toc">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#acceptance">Acceptance of terms</a></li>
+      <li><a href="#description">Description of service</a></li>
+      <li><a href="#permitted-use">Permitted use</a></li>
+      <li><a href="#prohibited">Prohibited use</a></li>
+      <li><a href="#intellectual-property">Intellectual property</a></li>
+      <li><a href="#your-content">Your content</a></li>
+      <li><a href="#disclaimer">Disclaimer of warranties</a></li>
+      <li><a href="#limitation">Limitation of liability</a></li>
+      <li><a href="#changes-service">Changes to the service</a></li>
+      <li><a href="#governing-law">Governing law</a></li>
+      <li><a href="#contact-terms">Contact us</a></li>
+    </ol>
+  </div>
+
+  <div class="policy-section" id="acceptance">
+    <div class="section-num">01</div>
+    <h2>Acceptance of terms</h2>
+    <p>By accessing or using webp.convert ("the Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the Service.</p>
+    <p>These Terms apply to all visitors and users of the Service. We reserve the right to update these Terms at any time. Continued use of the Service after changes constitutes your acceptance of the revised Terms.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="policy-section" id="description">
+    <div class="section-num">02</div>
+    <h2>Description of service</h2>
+    <p>webp.convert is a free, browser-based image conversion tool that allows users to convert images within ZIP archives to WebP format. The Service operates entirely client-side — all processing occurs within the user's web browser. No files are uploaded to any server.</p>
+    <p>The Service is provided free of charge and without registration. We reserve the right to modify, suspend, or discontinue the Service at any time without notice.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="policy-section" id="permitted-use">
+    <div class="section-num">03</div>
+    <h2>Permitted use</h2>
+    <p>You may use webp.convert for any lawful purpose, including:</p>
+    <ul>
+      <li><strong>Personal use</strong> — converting your own images and photos</li>
+      <li><strong>Commercial use</strong> — optimising images for websites, apps, or client projects</li>
+      <li><strong>Team use</strong> — sharing the tool URL with colleagues</li>
+      <li><strong>Integration</strong> — linking to the tool from your own website or documentation</li>
+    </ul>
+    <p>No account, license, or payment is required for any of the above uses.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="policy-section" id="prohibited">
+    <div class="section-num">04</div>
+    <h2>Prohibited use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Use the Service to process, distribute, or convert any content that is illegal, infringing, or violates third-party rights</li>
+      <li>Copy, reproduce, or redistribute the source code of this Service to create a competing product or service without express written permission</li>
+      <li>Remove, obscure, or alter any copyright notices or branding present in the Service</li>
+      <li>Attempt to decompile, reverse-engineer, or extract the source code for commercial redistribution</li>
+      <li>Introduce malicious code, bots, or automated scripts that abuse or disrupt the Service</li>
+      <li>Misrepresent the origin of the Service or claim ownership of the underlying software</li>
+    </ul>
+    <p>Violation of these prohibitions may result in legal action and claims for damages under applicable copyright and intellectual property law.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="policy-section" id="intellectual-property">
+    <div class="section-num">05</div>
+    <h2>Intellectual property</h2>
+    <p>The Service, including its design, code, interface, branding, and content, is the intellectual property of webp.convert and is protected by copyright law. All rights are reserved.</p>
+    <p>The following third-party open-source libraries are used under their respective licenses:</p>
+    <ul>
+      <li><strong>JSZip</strong> — MIT License &mdash; <a href="https://stuk.github.io/jszip/" target="_blank" rel="noopener">stuk.github.io/jszip</a></li>
+      <li><strong>Lato typeface</strong> — SIL Open Font License &mdash; designed by &Lukasz; Dziedzic</li>
+    </ul>
+    <p>These open-source licenses do not extend to the overall Service design, branding, or proprietary business logic.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="policy-section" id="your-content">
+    <div class="section-num">06</div>
+    <h2>Your content</h2>
+    <p>You retain full ownership of all images and files you process through the Service. Because the Service operates entirely in your browser and no files are transmitted to us, we have no access to, claim over, or responsibility for your content.</p>
+    <p>You represent and warrant that you have the legal right to process any content you use with the Service, and that doing so does not violate any applicable law or third-party rights.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="policy-section" id="disclaimer">
+    <div class="section-num">07</div>
+    <h2>Disclaimer of warranties</h2>
+    <p>The Service is provided <strong>"as is"</strong> and <strong>"as available"</strong> without warranties of any kind, either express or implied. We do not warrant that:</p>
+    <ul>
+      <li>The Service will be uninterrupted, error-free, or available at all times</li>
+      <li>Conversion results will meet your specific requirements or quality expectations</li>
+      <li>The Service will be compatible with all browsers, operating systems, or devices</li>
+      <li>Any errors or defects will be corrected</li>
+    </ul>
+    <p>You use the Service entirely at your own risk. We strongly recommend maintaining backups of your original files before processing.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="policy-section" id="limitation">
+    <div class="section-num">08</div>
+    <h2>Limitation of liability</h2>
+    <p>To the fullest extent permitted by applicable law, webp.convert and its owners shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:</p>
+    <ul>
+      <li>Loss of data or files resulting from use of the Service</li>
+      <li>Damage to your device or software</li>
+      <li>Business interruption or loss of revenue</li>
+      <li>Any other losses arising from your use of or inability to use the Service</li>
+    </ul>
+    <p>Our total liability to you for any claim arising out of these Terms or use of the Service shall not exceed zero dollars ($0), as the Service is provided entirely free of charge.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="policy-section" id="changes-service">
+    <div class="section-num">09</div>
+    <h2>Changes to the service</h2>
+    <p>We reserve the right to modify, update, or discontinue the Service (or any part of it) at any time, with or without notice. We will not be liable to you or any third party for any modification, suspension, or discontinuation of the Service.</p>
+    <p>We may also update these Terms at any time. The "Last updated" date at the top of this page will reflect the most recent revision. Your continued use of the Service following any changes constitutes your acceptance of the new Terms.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="policy-section" id="governing-law">
+    <div class="section-num">10</div>
+    <h2>Governing law</h2>
+    <p>These Terms shall be governed by and construed in accordance with applicable law. Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the competent courts in the applicable jurisdiction.</p>
+    <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="policy-section" id="contact-terms">
+    <div class="section-num">11</div>
+    <h2>Contact us</h2>
+    <p>If you have questions about these Terms of Service or wish to request permission for uses not covered above, please contact us:</p>
+    <div class="contact-card">
+      <h3>webp.convert</h3>
+      <p>Email: <a href="mailto:legal@yourwebsite.com">legal@yourwebsite.com</a></p>
+      <p>We aim to respond to all legal inquiries within 5 business days.</p>
+    </div>
+  </div>
+
+</div><!-- .policy-card -->
+
+<footer>
+  <div class="footer-brand">webp<span>.</span>convert</div>
+  <div class="footer-links">
+    <a href="index.html">App</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
